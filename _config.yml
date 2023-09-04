@@ -11,12 +11,12 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "David Florian"
+title                    : "Sam Sliman"
 title_separator          : "-"
-subtitle                 : "Example Website for Class"
-name                     : &name "David Florian" # &name is a YAML anchor which can be *referenced later
-description              : &description "Example website for class "
-url                      : https://davidflorianjr.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+subtitle                 : "He Who Bore Witness When The World Was Young"
+name                     : &name "Sam Sliman" # &name is a YAML anchor which can be *referenced later
+description              : &description "Welcome!"
+url                      : https://smsliman.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : 
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -84,7 +84,7 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
-    - "https://www.instagram.com/dr.dflo"
+    - "https://www.instagram.com/sm.sliman"
 
 # Analytics
 analytics:
@@ -97,16 +97,16 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "assets/img/David_Headshot_web2.jpg"
-  bio              : "An engineer with a passion for teaching "
-  location         : "Nashville, TN"
+  avatar           : "assets/img/SAM.jpg"
+  bio              : "Sam is currently losing his battle with scurvy. In lieu of thoughts and prayers, please send lemons and limes. Despite the professionalism of this website, he is actually a satirist by trade."
+  location         : "Sam can be found only at low tide, in the place where the ocean meets the sky "
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/DrD-Flo"
+      url: "https://github.com/smsliman"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/dr.dflo"
+      url: "https://www.instagram.com/sm.sliman"
 
 
 # Site Footer
