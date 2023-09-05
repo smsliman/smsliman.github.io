@@ -97,7 +97,7 @@ analytics:
 # Site Author
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
-  avatar           : "assets/img/SAM.jpg"
+  avatar           : "assets/img/SAM.jpeg"
   bio              : "Sam is currently losing his battle with scurvy. In lieu of thoughts and prayers, please send lemons and limes. Despite the professionalism of this website, he is actually a satirist by trade."
   location         : "Sam can be found only at low tide, in the place where the ocean meets the sky "
   links:
@@ -114,10 +114,10 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/DrD-Flo"
+      url: "https://github.com/smsliman"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://www.instagram.com/dr.dflo"
+      url: "https://www.instagram.com/sm.sliman"
 
 
 # Reading Files
