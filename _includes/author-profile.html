@@ -1,15 +1,6 @@
 {% assign author = page.author | default: page.authors[0] | default: site.author %}
 {% assign author = site.data.authors[author] | default: author %}
 
-<script>
-  async function fetchLocation() {
-    const response = await fetch('https://sam-get-location.nisala.workers.dev/?ppassword=akldsjfklajldkfjlkaadsf&key=sam');
-    const data = await response.text();
-    return data;
-  }
-  dat = fetchLocation();
-</script>
-
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
 
   {% if author.avatar %}
