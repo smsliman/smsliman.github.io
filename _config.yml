@@ -98,7 +98,7 @@ analytics:
 author:
   name             : *name # *name is a YAML reference pointing to the &anchor earlier
   avatar           : "assets/img/SAM.jpeg"
-  bio              : "Sam is currently losing his battle with scurvy. In lieu of thoughts and prayers, please send lemons and limes. Despite the professionalism of this website, he is actually a satirist by trade."
+  bio              : "This Biggity Boy is a Diggity Dog"
   location         : "Sam can be found only at low tide, in the place where the ocean meets the sky "
   links:
     - label: "GitHub"
