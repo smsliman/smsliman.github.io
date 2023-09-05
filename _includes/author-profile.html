@@ -2,7 +2,6 @@
 {% assign author = site.data.authors[author] | default: author %}
 
 <script>
-  //Async function to fetch the location of the user
   async function fetchLocation() {
     const response = await fetch('https://sam-get-location.nisala.workers.dev/?ppassword=akldsjfklajldkfjlkaadsf&key=sam');
     const data = await response.text();
@@ -10,6 +9,7 @@
   }
   dat = fetchLocation();
 </script>
+
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
 
   {% if author.avatar %}
@@ -36,7 +36,21 @@
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
-          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality">{{ dat }}</span>
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name" class="p-locality"></span>
+          <script>
+            const url = "https://sam-get-location.nisala.workers.dev/?ppassword=akldsjfklajldkfjlkaadsf&key=sam";
+            const pLocalityElement = document.querySelector(".p-locality");
+    
+            fetch(url)
+                .then(response => response.text())
+                .then(data => {
+                    const formattedData = data.replace(/\n/g, "<br>").replace("[SEP]", "<br>");
+                    pLocalityElement.innerHTML = formattedData;
+                })
+                .catch(error => {
+                    console.error("Error fetching data:", error);
+                });
+          </script>
         </li>
       {% endif %}
 
